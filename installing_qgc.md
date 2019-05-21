@@ -1,4 +1,4 @@
-#intalling QGroundControl 
+# Intalling QGroundControl 
 
 ## Overview 
 
@@ -24,6 +24,6 @@ wget https://s3-us-west-2.amazonaws.com/qgroundcontrol/latest/QGroundControl.App
 ```
 change permissions and run 
 ```
-    chmod +x ./QGroundControl.AppImage 
-    ./QGroundControl.AppImage  #(or double click)
+chmod +x ./QGroundControl.AppImage 
+./QGroundControl.AppImage  #(or double click)
 ```

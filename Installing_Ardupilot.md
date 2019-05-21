@@ -1,4 +1,4 @@
-#Installing Ardupilot and MAVProxy
+# Installing Ardupilot and MAVProxy
 
 In home directory:
 ```
