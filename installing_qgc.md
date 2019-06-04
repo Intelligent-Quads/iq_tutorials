@@ -27,3 +27,11 @@ change permissions and run
 chmod +x ./QGroundControl.AppImage 
 ./QGroundControl.AppImage  #(or double click)
 ```
+
+## Run SITL and connect with Q Ground
+
+```
+cd ~/ardupilot/ArduCopter/
+sim_vehicle.py
+```
+
