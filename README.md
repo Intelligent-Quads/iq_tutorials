@@ -1,5 +1,5 @@
 # Intelligent Quads Tutorials
 
-[Installing Ardupilot and MAVProxy](installing_Ardupilot.md)
+[Installing Ardupilot and MAVProxy](Installing_Ardupilot.md)
 
 [Installing QGroundControl](installing_qgc.md)
