@@ -35,7 +35,7 @@ for more detailed instructions for installing gazebo checkout http://gazebosim.o
 cd ~
 git clone https://github.com/khancyr/ardupilot_gazebo.git
 cd ardupilot_gazebo
-git checkout gazebo9
+git checkout dev
 mkdir build
 cd build
 cmake ..
