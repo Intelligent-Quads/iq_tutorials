@@ -1,5 +1,11 @@
 # Installing Gazebo and ArduPilot Plugin
 
+## Overview 
+
+Robot simulation is an essential tool in every roboticist's toolbox. A well-designed simulator makes it possible to rapidly test algorithms, design robots, perform regression testing, and train AI system using realistic scenarios. Gazebo offers the ability to accurately and efficiently simulate populations of robots in complex indoor and outdoor environments. At your fingertips is a robust physics engine, high-quality graphics, and convenient programmatic and graphical interfaces. Best of all, Gazebo is free with a vibrant community.
+
+for more infromation on gazebo checkout http://gazebosim.org/
+
 ## Install Gazebo
 
 Setup your computer to accept software from http://packages.osrfoundation.org:
@@ -21,6 +27,8 @@ Install Gazebo:
 ```
 sudo apt install gazebo9 libgazebo9-dev
 ```
+
+for more detailed instructions for installing gazebo checkout http://gazebosim.org/tutorials?tut=install_ubuntu
 
 ## Install Gazebo plugin for APM (ArduPilot Master):
 ```
