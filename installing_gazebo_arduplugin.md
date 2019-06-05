@@ -47,7 +47,7 @@ echo 'source /usr/share/gazebo/setup.sh' >> ~/.bashrc
 ```
 Set paths for models:
 ```
-echo 'export GAZEBO_MODEL_PATH=~/ardupilot_gazebo/gazebo_models' >> ~/.bashrc6
+echo 'export GAZEBO_MODEL_PATH=~/ardupilot_gazebo/models' >> ~/.bashrc
 . ~/.bashrc
 ```
 
