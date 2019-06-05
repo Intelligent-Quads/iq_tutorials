@@ -1,5 +1,9 @@
 # Installing Ardupilot and MAVProxy
 
+### Video tutorial at https://youtu.be/wlkoq65mM2A
+
+## Clone ArduPilot
+
 In home directory:
 ```
 cd ~
