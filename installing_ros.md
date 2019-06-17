@@ -43,7 +43,7 @@ catkin build
 ```
 Add a line to end of `~/.bashrc` by running the following command:
 ```
-echo "source ~/catkin_ws/devel/setup.bash" >> .bashrc
+echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 ```
 
 update global variables
