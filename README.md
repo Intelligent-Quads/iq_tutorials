@@ -10,3 +10,8 @@
 
 [Introduction to ROS and ROS Tools for Drone Development](ros_intro.md)
 
+---
+
+## Resources 
+
+[Common Linux, ROS and MAVproxy Commands](helpful_commands.md)
