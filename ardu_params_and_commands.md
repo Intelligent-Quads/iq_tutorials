@@ -1,6 +1,31 @@
 # ArduCopter Parameters and Helpful MAVproxy Commands
 
-## ArduCopter Important Parameters
+#
+## Common MAVproxy Commands
+
+```
+alias           : command aliases: usage: alias <add|remove|list>
+arm             : arm motors: usage: arm <check|uncheck|list|throttle|safetyon|safetyoff>
+auxopt          : select option for aux switches on CH7 and CH8 (ArduCopter only): Usage: auxopt set|show|reset|list 
+disarm          : disarm motors
+land            : auto land
+log             : log file handling: usage: log <list|download|erase|resume|status|cancel>
+mode            : mode change
+module          : module commands: usage: module <list|load|reload|unload>
+param           : parameter handling: Usage: param <fetch|save|set|show|load|preload|forceload|diff|download|help>
+position        : position: Usage: position x y z (meters)
+rc              : RC input control: Usage: rc <channel|all> <pwmvalue>
+reboot          : reboot autopilot
+repeat          : repeat a command at regular intervals: Usage: repeat <add|remove|clean>
+script          : run a script of MAVProxy commands
+setspeed        : do_change_speed: Usage: setspeed SPEED_VALUE
+setyaw          : condition_yaw: Usage: yaw ANGLE ANGULAR_SPEED MODE:[0 absolute / 1 relative]
+takeoff         : takeoff: Usage: takeoff ALTITUDE_IN_METERS
+```
+
+Helpful Commands Cheat Sheet [Here](helpful_commands.md) 
+
+# ArduCopter Important Parameters
 
 ### Waypoint Nav Parameters 
 
@@ -110,29 +135,7 @@ Ran66666ge 	Increment 	Units
 0 - 60000 	1000 	milliseconds
 ```
 
-## Common MAVproxy Commands
 
-```
-alias           : command aliases: usage: alias <add|remove|list>
-arm             : arm motors: usage: arm <check|uncheck|list|throttle|safetyon|safetyoff>
-auxopt          : select option for aux switches on CH7 and CH8 (ArduCopter only): Usage: auxopt set|show|reset|list 
-disarm          : disarm motors
-land            : auto land
-log             : log file handling: usage: log <list|download|erase|resume|status|cancel>
-mode            : mode change
-module          : module commands: usage: module <list|load|reload|unload>
-param           : parameter handling: Usage: param <fetch|save|set|show|load|preload|forceload|diff|download|help>
-position        : position: Usage: position x y z (meters)
-rc              : RC input control: Usage: rc <channel|all> <pwmvalue>
-reboot          : reboot autopilot
-repeat          : repeat a command at regular intervals: Usage: repeat <add|remove|clean>
-script          : run a script of MAVProxy commands
-setspeed        : do_change_speed: Usage: setspeed SPEED_VALUE
-setyaw          : condition_yaw: Usage: yaw ANGLE ANGULAR_SPEED MODE:[0 absolute / 1 relative]
-takeoff         : takeoff: Usage: takeoff ALTITUDE_IN_METERS
-```
-
-Helpful Commands Cheat Sheet [Here](helpful_commands.md) 
 
 ---
 **References**
