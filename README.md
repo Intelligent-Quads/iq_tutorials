@@ -12,6 +12,8 @@
 
 [C++ Waypoint Navigation Using the GNC API](gnc_tutorial.md)
 
+[ArduCopter Params and MAVproxy Commands](ardu_params_and_commands.md)
+
 ---
 
 ## Resources 
@@ -19,3 +21,18 @@
 [Common Linux, ROS and MAVproxy Commands](helpful_commands.md)
 
 [GNC API Documentation](GNC_functions_documentation.md)
+
+## References 
+http://ardupilot.org/copter/index.html
+
+http://ardupilot.org/copter/docs/parameters.html#wpnav-parameters
+
+http://qgroundcontrol.com/
+
+https://discuss.ardupilot.org/
+
+http://ardupilot.org/dev/
+
+https://www.ros.org/
+
+

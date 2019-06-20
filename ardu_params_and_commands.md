@@ -1,0 +1,87 @@
+# ArduCopter Parameters and Helpful MAVproxy Commands
+
+## ArduCopter Important Parameters
+
+### Waypoint Nav Parameters 
+
+#### WPNAV_SPEED: Waypoint Horizontal Speed Target
+
+Defines the speed in cm/s which the aircraft will attempt to maintain horizontally during a WP mission
+```
+Range 	    Increment 	Units
+20 - 2000 	50 	        centimeters per second
+```
+#### WPNAV_RADIUS: Waypoint Radius
+
+Defines the distance from a waypoint, that when crossed indicates the wp has been hit.
+```
+Range 	    Increment 	Units
+5 - 1000 	1 	        centimeters
+```
+#### WPNAV_SPEED_UP: Waypoint Climb Speed Target
+
+Defines the speed in cm/s which the aircraft will attempt to maintain while climbing during a WP mission
+```
+Range 	    Increment 	Units
+10 - 1000 	50 	        centimeters per second
+```
+
+#### WPNAV_SPEED_DN: Waypoint Descent Speed Target
+
+Defines the speed in cm/s which the aircraft will attempt to maintain while descending during a WP mission
+```
+Range 	    Increment 	Units
+10 - 500 	10 	        centimeters per second
+```
+#### WPNAV_ACCEL: Waypoint Acceleration
+Defines the horizontal acceleration in cm/s/s used during missions
+```
+Range 	    Increment 	Units
+50 - 500 	10 	        centimeters per square second
+```
+#### WPNAV_ACCEL_Z: Waypoint Vertical Acceleration
+
+Defines the vertical acceleration in cm/s/s used during missions
+```
+Range 	    Increment 	Units
+50 - 500 	10 	        centimeters per square second
+```
+#### WPNAV_RFND_USE: Waypoint missions use rangefinder for terrain following
+Note: This parameter is for advanced users
+
+This controls if waypoint missions use rangefinder for terrain following
+Values
+```
+Value 	Meaning
+0 	    Disable
+1 	    Enable
+```
+
+## Common MAVproxy Commands
+
+```
+alias           : command aliases: usage: alias <add|remove|list>
+arm             : arm motors: usage: arm <check|uncheck|list|throttle|safetyon|safetyoff>
+auxopt          : select option for aux switches on CH7 and CH8 (ArduCopter only): Usage: auxopt set|show|reset|list 
+disarm          : disarm motors
+land            : auto land
+log             : log file handling: usage: log <list|download|erase|resume|status|cancel>
+mode            : mode change
+module          : module commands: usage: module <list|load|reload|unload>
+param           : parameter handling: Usage: param <fetch|save|set|show|load|preload|forceload|diff|download|help>
+position        : position: Usage: position x y z (meters)
+rc              : RC input control: Usage: rc <channel|all> <pwmvalue>
+reboot          : reboot autopilot
+repeat          : repeat a command at regular intervals: Usage: repeat <add|remove|clean>
+script          : run a script of MAVProxy commands
+setspeed        : do_change_speed: Usage: setspeed SPEED_VALUE
+setyaw          : condition_yaw: Usage: yaw ANGLE ANGULAR_SPEED MODE:[0 absolute / 1 relative]
+takeoff         : takeoff: Usage: takeoff ALTITUDE_IN_METERS
+```
+
+Helpful Commands Cheat Sheet [Here](helpful_commands.md) 
+
+---
+**References**
+
+[ArduCopter Full Parameter List](http://ardupilot.org/copter/docs/parameters.html)
