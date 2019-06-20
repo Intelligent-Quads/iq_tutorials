@@ -1,5 +1,7 @@
 # Install ROS and Setup Catkin  
 
+### Video Tutorial at https://youtu.be/EmIjedzHwzI
+
 In this tutorial we are using **Ubuntu 18.04** and **ROS Melodic**
 
 Code blocks are meant to be typed in Terminal windows. "Control+Alt+T" opens a new Terminal window.

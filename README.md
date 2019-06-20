@@ -10,6 +10,8 @@
 
 [Introduction to ROS and ROS Tools for Drone Development](ros_intro.md)
 
+[C++ Waypoint Navigation Using the GNC API](gnc_tutorial.md)
+
 ---
 
 ## Resources 

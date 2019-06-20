@@ -1,5 +1,7 @@
 # Installing Gazebo and ArduPilot Plugin
 
+### Video Tutorial at https://youtu.be/m7hPyJJmWmU
+
 ## Overview 
 
 Robot simulation is an essential tool in every roboticist's toolbox. A well-designed simulator makes it possible to rapidly test algorithms, design robots, perform regression testing, and train AI system using realistic scenarios. Gazebo offers the ability to accurately and efficiently simulate populations of robots in complex indoor and outdoor environments. At your fingertips is a robust physics engine, high-quality graphics, and convenient programmatic and graphical interfaces. Best of all, Gazebo is free with a vibrant community.

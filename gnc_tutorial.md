@@ -1,6 +1,8 @@
 # Guidance Navigation and Control
 
-The following tutorial will show you how to make a simple program that allows you to send your drone to waypoints. This tutorial uses my API, which has a bunch of high level functions that handle the various flight opperations including, takeoff, land, waypoint nav and all the reference frames associated with the navigation. The documentation for these GNC functions are available [here](GNC_functions_documentation.md)
+The following tutorial will show you how to make a simple program that allows you to send your drone to waypoints. This tutorial uses my API, which has a bunch of high level functions that handle the various flight opperations including, takeoff, land, waypoint nav and all the reference frames associated with the navigation. The documentation for these GNC functions are available **[here](GNC_functions_documentation.md)**
+
+### Video Tutorial Part 1 at https://youtu.be/eRAfeC8OFfs 
 
 ## Make Sure You Have a Text Editor
 As this is the first tutorial that we will be coding please make sure you have a text editor. My prefered text editor is sublime. You can download it by running the below commands
@@ -148,14 +150,26 @@ int main(int argc, char** argv)
 {
 	//initialize ros 
 	ros::init(argc, argv, "gnc_node");
-	ros::NodeHandle controlnode;
+	ros::NodeHandle gnc_node;
 	
 	//initialize control publisher/subscribers
-	init_publisher_subscriber(controlnode);
+	init_publisher_subscriber(gnc_node);
+
+  	// wait for FCU connection
+	wait4connect();
+
+	//wait for used to switch to mode GUIDED
+	wait4start();
+
+	//create local reference frame 
+	initialize_local_frame();
+
+	//request takeoff
+	takeoff(3);
 
 	//specify some waypoints 
-	std::vector<control_api_waypoint> waypointList;
-	control_api_waypoint nextWayPoint;
+	std::vector<gnc_api_waypoint> waypointList;
+	gnc_api_waypoint nextWayPoint;
 	nextWayPoint.x = 0;
 	nextWayPoint.y = 0;
 	nextWayPoint.z = 3;
@@ -181,18 +195,12 @@ int main(int argc, char** argv)
 	nextWayPoint.z = 3;
 	nextWayPoint.psi = 180;
 	waypointList.push_back(nextWayPoint);
+	nextWayPoint.x = 0;
+	nextWayPoint.y = 0;
+	nextWayPoint.z = 3;
+	nextWayPoint.psi = 0;
+	waypointList.push_back(nextWayPoint);
 
-  	// wait for FCU connection
-	wait4connect();
-
-	//wait for used to switch to mode GUIDED
-	wait4start();
-
-	//create local reference frame 
-	initialize_local_frame();
-
-	//request takeoff
-	takeoff(3);
 
 	//specify control loop rate. We recommend a low frequency to not over load the FCU with messages. Too many messages will cause the drone to be sluggish
 	ros::Rate rate(2.0);
@@ -201,7 +209,7 @@ int main(int argc, char** argv)
 	{
 		ros::spinOnce();
 		rate.sleep();
-		if(check_waypoint_reached() == 1)
+		if(check_waypoint_reached(.3) == 1)
 		{
 			if (counter < waypointList.size())
 			{
@@ -217,20 +225,32 @@ int main(int argc, char** argv)
 	return 0;
 }
 
-```
-run example code
----
 
 ```
-roslaunch mission8_sim droneOnly.launch
+## Build Code
+```
+cd ~/catkin_ws
+catkin build
+source ~/.bashrc
+```
+
+## Run Example Code
+
+```
+roslaunch iq_sim runway.launch
 # New Terminal
-~/catkin_ws/src/Mission8_OutOfControls/scripts/startsim.sh
+./startsitl.sh
 # New Terminal
-roslaunch out_of_controls apm.launch
+roslaunch iq_sim apm.launch
 # New Terminal 
-roslaunch out_of_controls contolAPIExample.launch
+rosrun iq_gnc square
 ```
 NOTE** you can tile gnome terminals by pressing `ctrl + shift + t`
+
+Finally run the mission by changing the flight mode to guided in the MAVproxy terminal by running 
+```
+mode guided 
+```
 
 You should now have a basic understanding of the functions available for controling your drone. You should be able to use these functions to help you make more complex navigation code.
 

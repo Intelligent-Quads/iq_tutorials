@@ -1,5 +1,7 @@
 # Introduction to Ros for Autonomous Drones 
 
+### Video Tutorial at https://youtu.be/N4XvVldWlXk
+
 Although ROS (Robot Operating System) is not an operating system, it provides services designed for a heterogeneous computer cluster such as hardware abstraction, low-level device control, implementation of commonly used functionality, message-passing between processes, and package management.
 
 We will mostly be using the message passing functionality. To demonstrate this we will launch our simulator again and run a few commands. 
