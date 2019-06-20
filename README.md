@@ -15,3 +15,5 @@
 ## Resources 
 
 [Common Linux, ROS and MAVproxy Commands](helpful_commands.md)
+
+[GNC API Documentation](GNC_functions_documentation.md)
