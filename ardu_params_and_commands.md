@@ -16,7 +16,7 @@ Range 	    Increment 	Units
 Defines the distance from a waypoint, that when crossed indicates the wp has been hit.
 ```
 Range 	    Increment 	Units
-5 - 1000 	1 	        centimeters
+5 - 1000 	1           centimeters
 ```
 #### WPNAV_SPEED_UP: Waypoint Climb Speed Target
 
@@ -55,6 +55,59 @@ Values
 Value 	Meaning
 0 	    Disable
 1 	    Enable
+```
+#### RTL_ALT: RTL Altitude
+
+The minimum alt above home the vehicle will climb to before returning. If the vehicle is flying higher than this value it will return at its current altitude.
+```
+Range 	Increment 	Units
+200 - 8000 	1 	centimeters
+```
+
+#### RTL_CONE_SLOPE: RTL cone slope
+
+Defines a cone above home which determines maximum climb
+```
+Range 	 	
+0.5 - 10.0 	
+
+Values
+Value 	Meaning
+0 	Disabled
+1 	Shallow
+3 	Steep
+
+Increment
+.1
+```
+#### RTL_SPEED: RTL speed
+
+Defines the speed in cm/s which the aircraft will attempt to maintain horizontally while flying home. If this is set to zero, WPNAV_SPEED will be used instead.
+
+```
+Range 	Increment 	Units
+0 - 2000 	50 	centimeters per second
+```
+#### RTL_ALT_FINAL: RTL Final Altitude
+
+This is the altitude the vehicle will move to as the final stage of Returning to Launch or after completing a mission. Set to zero to land.
+```
+Range 	Increment 	Units
+-1 - 1000 	1 	centimeters
+```
+#### RTL_CLIMB_MIN: RTL minimum climb
+
+The vehicle will climb this many cm during the initial climb portion of the RTL
+```
+Range 	Increment 	Units
+0 - 3000 	10 	centimeters
+```
+#### RTL_LOIT_TIME: RTL loiter time
+
+Time (in milliseconds) to loiter above home before beginning final descent
+```
+Ran66666ge 	Increment 	Units
+0 - 60000 	1000 	milliseconds
 ```
 
 ## Common MAVproxy Commands
