@@ -1,4 +1,4 @@
-# Introduction to YOLO and Darknet 
+# Introduction to YOLO/Darknet Image Recognition 
 
 ## Install CUDA 
 Cuda is a library that allows programs to take advantage of your GPU as a computing resource. YOLO will run without Cuda, but the algorithm is up to 500 x more quick with Cuda. To install Cuda, run 
@@ -46,5 +46,8 @@ the options are as follows
 - yolov3: about as fast as v2, but more accurate. Yolo v3 has a high GPU ram requirement to train and run. If your graphics card does not have enough ram, use yolo v2 
 - tiny-yolo: Very fast yolo model. Would recommend for application where speed is most important. Works very well on Nvidia Jetson
 
+---
+### References 
 
+https://pjreddie.com/darknet/yolo/
 
