@@ -192,3 +192,8 @@ reposition the models as seen fit
 
 save file and override our file hills.world
 
+---
+
+### References
+
+http://gazebosim.org/tutorials

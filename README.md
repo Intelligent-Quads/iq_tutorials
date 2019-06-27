@@ -14,6 +14,10 @@
 
 [ArduCopter Params and MAVproxy Commands](ardu_params_and_commands.md)
 
+[Basic Gazebo Modeling](gazebo_world_modeling_intro.md)
+
+[Intoduction to YOLO Image Recognition](intro_to_yolo.md)
+
 ---
 
 ## Resources 
