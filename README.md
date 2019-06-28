@@ -18,6 +18,8 @@
 
 [Intoduction to YOLO Image Recognition](intro_to_yolo.md)
 
+[Writing our First ROS Subscriber for YOLO](basic_ros_sub.md)
+
 ---
 
 ## Resources 

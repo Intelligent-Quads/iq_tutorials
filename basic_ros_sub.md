@@ -85,6 +85,10 @@ Now we should have enough info to declare our subscriber. write
 ```
 	ros::Subscriber sub = n.subscribe("/darknet_ros/bounding_boxes", 1, detection_cb);
 ```
+then add `ros::spin();` this way the subscriber continues to get the latest data as it becomes available.
+```
+ros::spin();
+```
 we will also need to include the ros message to our include section. At the top of the program add
 ```
 #include <darknet_ros_msgs/BoundingBoxes.h>
@@ -146,3 +150,7 @@ rosrun iq_gnc sub
 ```
 we should see the objects seen by the drone being printed in the console
 
+---
+### References
+
+http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28c%2B%2B%29
