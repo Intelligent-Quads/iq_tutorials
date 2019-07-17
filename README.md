@@ -20,6 +20,10 @@
 
 [Writing our First ROS Subscriber for YOLO](basic_ros_sub.md)
 
+[Simple Search and Rescue Program](search_and_rescue.md)
+
+[Adding a Sensor to a Gazebo Robot](adding_a_sensor.md)
+
 ---
 
 ## Resources 
