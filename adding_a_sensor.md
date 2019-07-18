@@ -82,6 +82,13 @@ we will then add the following lines below the `</joint>` tag for the camera.
             </plugin>
           </sensor>
         </link>
+
+        <joint name="hokuyo_joint" type="fixed">
+          <pose>0 0 0 0 0 0</pose>
+          <parent>iris::iris_demo::iris::base_link</parent>
+          <child>hokuyo_link</child>
+        </joint>
+
 ```
 
 ## Key Tags
