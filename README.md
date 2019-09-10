@@ -24,6 +24,9 @@
 
 [Adding a Sensor to a Gazebo Robot](adding_a_sensor.md)
 
+[Obstacle Avoidance](avoidance.md)
+
+
 ---
 
 ## Resources 
