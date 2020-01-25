@@ -26,6 +26,8 @@
 
 [Obstacle Avoidance](avoidance.md)
 
+[Basic GPS Denied Navigation](basic_gps_denied_navigation.md)
+
 
 ---
 
