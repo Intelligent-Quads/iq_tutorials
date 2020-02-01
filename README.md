@@ -26,6 +26,8 @@
 
 [Obstacle Avoidance](avoidance.md)
 
+[Installing Mission Planner On Linux](installing_mission_on_Linux.md)
+
 [Basic GPS Denied Navigation](basic_gps_denied_navigation.md)
 
 
