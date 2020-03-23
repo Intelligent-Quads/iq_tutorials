@@ -28,6 +28,8 @@
 
 [Installing Mission Planner On Linux](installing_mission_on_Linux.md)
 
+[Training YOLO](training_yolo.md)
+
 [Basic GPS Denied Navigation](basic_gps_denied_navigation.md)
 
 
