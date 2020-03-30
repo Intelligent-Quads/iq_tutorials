@@ -1,10 +1,10 @@
 # Guidance Navigation and Control
 
-The following tutorial will show you how to make a simple program that allows you to send your drone to waypoints. This tutorial uses my API, which has a bunch of high level functions that handle the various flight opperations including, takeoff, land, waypoint nav and all the reference frames associated with the navigation. The documentation for these GNC functions are available **[here](GNC_functions_documentation.md)**
+The following tutorial will show you how to make a simple program that allows you to send your drone to waypoints. This tutorial uses my API, which has a bunch of high level functions that handle the various flight operations including, takeoff, land, waypoint nav and all the reference frames associated with the navigation. The documentation for these GNC functions are available **[here](GNC_functions_documentation.md)**
 
 ### Video Tutorial Part 1 at https://youtu.be/eRAfeC8OFfs 
 
-## Make Sure You Have a Text Editor
+## Make sure you have a text editor
 As this is the first tutorial that we will be coding please make sure you have a text editor. My prefered text editor is sublime. You can download it by running the below commands
 ```
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
@@ -20,11 +20,11 @@ First, we will clone the IQ GNC ROS package. This ROS package comes with my GNC 
 git clone https://github.com/Intelligent-Quads/iq_gnc.git
 ```
 
-this package contains the file gnc_functions.hpp . This file contains a bunch of useful functions for creating intelligent drone applications.
+this package contains the file `gnc_functions.hpp`. This file contains a bunch of useful functions for creating intelligent drone applications.
 
-## Write a Small Program To Navigate Your Drone
+## Write a small program to navigate your drone
 
-Once you have cloned the iq_gnc package. Create a new file in called `square.cpp` in `Mission8_OutOfControls/src`. Then open the file `CMakeLists.txt`. Add the following to the bottom.
+Once you have cloned the `iq_gnc` package. Create a new file called `square.cpp` in `Mission8_OutOfControls/src`. Then open the file `CMakeLists.txt` and add the following to the bottom.
 ```
 add_executable(square src/square.cpp)
 target_link_libraries(square ${catkin_LIBRARIES})
@@ -51,7 +51,7 @@ int main(int argc, char** argv)
 }
 ```
 
-We will then add the function `init_publisher_subscriber()`. This function takes our ros node handle as an input and initializes subcribers that will collect the necissary information from our autopilot. add the following
+We will then add the function `init_publisher_subscriber()`. This function takes our ros node handle as an input and initializes subcribers that will collect the necessary information from our autopilot. Add the following
 
 ```
 //initialize control publisher/subscribers
@@ -69,9 +69,9 @@ we will then add the following functions to handle preflight opperations
 	//create local reference frame 
 	initialize_local_frame();
 ```
-The function `wait4connect()` will loop until the node can communicate with the flight control unit (FCU). Once the connection with the FCU is established then we will use the function `wait4start()` to hold the program until the pilot executes the program by switching the FCU flight mode to GUIDED. This can be done from a ground control stattion (GCS) such as Mission Planner or QGroundControl or from a switch on a radio controller. Finally, once the command to execcute the mission is sent you will use the function `initialize_local_frame()` to create your navigation frame. This function creates the local reference frame based on the starting location of the drone. 
+The function `wait4connect()` will loop until the node can communicate with the flight control unit (FCU). Once the connection with the FCU is established then we will use the function `wait4start()` to hold the program until the pilot executes the program by switching the FCU flight mode to GUIDED. This can be done from a ground control stattion (GCS) such as Mission Planner or QGroundControl or from a switch on a radio controller. Finally, once the command to execute the mission is sent, you will use the function `initialize_local_frame()` to create your navigation frame. This function creates the local reference frame based on the starting location of the drone. 
 
-Next we will request takeoff. using the function `takeoff(float takeOffHieght)`. Add
+Next we will request takeoff. Using the function `takeoff(float takeOffHieght)`. Add
 ```
 	//request takeoff
 	takeoff(3);
@@ -227,14 +227,14 @@ int main(int argc, char** argv)
 
 
 ```
-## Build Code
+## Build code
 ```
 cd ~/catkin_ws
 catkin build
 source ~/.bashrc
 ```
 
-## Run Example Code
+## Run example code
 
 ```
 roslaunch iq_sim runway.launch
