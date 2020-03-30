@@ -97,7 +97,7 @@ we will then add the following lines below the `</joint>` tag for the camera.
 
 - `<link>` specifies an object to be attached to the model 
 
-- `<joint` specifies how the link is attached to the model
+- `<joint>` specifies how the link is attached to the model
 
 
 ## Completed World File 
