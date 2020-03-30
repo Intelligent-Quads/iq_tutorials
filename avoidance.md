@@ -87,7 +87,7 @@ this will make our drone take off and hold postion.
 
 ## Parse the Lidar Data
 
-we are going to go through the returns of the lidar and create a direction and magnitude in which the drone will maneuver. We will use a version of the potential feild method seen in this [paper](http://users.isr.ist.utl.pt/~mir/pub/ObstacleAvoidance.pdf)
+we are going to go through the returns of the lidar and create a direction and magnitude in which the drone will maneuver. We will use a version of the potential field method seen in this [paper](http://users.isr.ist.utl.pt/~mir/pub/ObstacleAvoidance.pdf)
 
 ```
 
