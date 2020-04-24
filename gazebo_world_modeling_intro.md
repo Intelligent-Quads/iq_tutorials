@@ -180,7 +180,7 @@ roslaunch iq_sim hills.launch
 
 ## Add Other Models 
 
-clich on the `Insert` tab in the left column 
+click on the `Insert` tab in the left column 
 
 add the model `Winding Valley Heightmap`
 

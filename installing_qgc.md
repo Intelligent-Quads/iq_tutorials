@@ -18,7 +18,7 @@ QGroundControl provides full flight control and vehicle setup for PX4 or ArduPil
 
 for more detailed information please visit http://qgroundcontrol.com/
 
-## install QGroundControl for Ubuntu Linux 16.04 LTS or later:
+## Install QGroundControl for Ubuntu Linux 16.04 LTS or later:
 
 Download QGroundControl.AppImage 
 ```

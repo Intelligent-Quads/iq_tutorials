@@ -1,6 +1,6 @@
 # Installing Mission Planner on Linux
 
-While I prefer to use QGroundControl as my ground station, there are still reasons now and again that onlt mission planner can do the job. Mission planner does not have native support for linux, but it is still possible to use via mono.
+While I prefer to use QGroundControl as my ground station, there are still reasons now and again that only Mission Planner can do the job. Mission Planner does not have native support for linux, but it is still possible to use via mono.
 
 ### On Linux
 

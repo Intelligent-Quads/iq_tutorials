@@ -16,14 +16,14 @@ this time we will launch our gazebo world by launching it with ROS as follows
 ```
 roslaunch iq_sim runway.launch
 ```
-We will also launch the ArduCopter simulator as well. I have made a nice script so that you don't have to remember the big command `cd ~/ardupilot/ArduCopter/ && sim_vehicle.py -v ArduCopter -f gazebo-iris --console` from the previous tutorials. I recommend you move the script to your home folder for ease of access. do this by running the command below. 
+We will also launch the ArduCopter simulator as well. I have made a nice script so that you don't have to remember the big command `cd ~/ardupilot/ArduCopter/ && sim_vehicle.py -v ArduCopter -f gazebo-iris --console` from the previous tutorials. I recommend you move the script to your home folder for ease of access. Do this by running the command below. 
 
 ```
 cp ~/catkin_ws/src/iq_sim/scripts/startsitl.sh ~
 ```
 now we can launch the ardupilot sitl by running 
 ```
-./startsitl.sh
+~/startsitl.sh
 ```
 
 ## Intoduction to ROS Commandline Tools   
@@ -66,7 +66,7 @@ we can see what data is being published by running the following
 rostopic echo /gazebo/model_states
 ```
 
-now if fly the drone we will be able to see changes in position when we fly the drone.
+now if we fly the drone, we will be able to see changes in position as we fly around.
 
 fly the drone by running the following in the mavproxy terminal as we did in the previous tutorial.
 
@@ -76,14 +76,14 @@ arm throttle
 takeoff 15
 ```
 
-## Using MAVROS to get telemetry data from the fcu
+## Using MAVROS to get telemetry data from the FCU
 
 Now the the topic `/gazebo/model_states` is the true model position in the simulator. This isn't something we can use in real life. In real life, we have to use the estimate of the drone's position which is formulated from a combination of its sensors. This position is trasmitted using a communication protocol called mavlink. These messages are stripped down and are optimized for radio transmission. MAVROS is a middle man which translates the MAVlink messages into ROS messages, which are easy to use and common between different robot systems. To start mavros run
 
 ```
 roslaunch iq_sim apm.launch
 ```
-when you run rostopic list you should see a bunch of mavros topics 
+when you run `rostopic list` you should see a bunch of mavros topics 
 ```
 /clock
 /diagnostics
@@ -199,7 +199,7 @@ Now we can see the drones position in it's local frame by running
 rostopic echo /mavros/global_position/local
 ```
 
-In the following tutorials we will be accessing the data on these topics in our c++ programs. To see the type of message being published run 
+In the following tutorials we will be accessing the data on these topics in our C++ programs. To see the type of message being published run 
 ```
 rostopic list -v /mavros/global_position/local
 ```
