@@ -32,6 +32,9 @@
 
 [Basic GPS Denied Navigation](basic_gps_denied_navigation.md)
 
+[Using an RC Controller with MAVproxy](rc_controller.md)
+
+[Drone Swarms with Ardupilot](swarming_ardupilot.md)
 
 ---
 
