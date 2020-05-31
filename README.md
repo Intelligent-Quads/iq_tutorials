@@ -1,5 +1,15 @@
 # Intelligent Quads Tutorials
 
+Intelligent Quads is a community dedicated to helping people learn how to become a developer of intelligent drone applications.
+
+Each of the bellow tutorials has an associated video tutorial. Be sure to checkout the [Intelligent Quads Youtube Channel!](https://www.youtube.com/channel/UCuZy0c-uvSJglnZfQC0-uaQ)
+
+## Community Discord Server
+
+Come be a part of the growing community of drone application developers! Join the the conversation in our [discord](https://discord.gg/xZjXaAf).
+
+## List of Tutorials
+
 [Installing Ardupilot and MAVProxy](Installing_Ardupilot.md)
 
 [Installing QGroundControl](installing_qgc.md)
