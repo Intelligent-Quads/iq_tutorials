@@ -2,6 +2,8 @@
 
 While I prefer to use QGroundControl as my ground station, there are still reasons now and again that only Mission Planner can do the job. Mission Planner does not have native support for linux, but it is still possible to use via mono.
 
+## Video Tutorial at https://youtu.be/XIS-nPs8Oq4
+
 ### On Linux
 
 #### Requirements

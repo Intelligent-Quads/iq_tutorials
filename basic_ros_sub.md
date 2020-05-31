@@ -1,5 +1,7 @@
 # First ROS Subscriber
 
+## Video Tutorial at https://youtu.be/iueRUQCvJXw
+
 In this tutorial I will be showing you how to write a ROS subscriber. A ROS subscriber allows you to use data being published on a ROS topic in your own C++ ROS node. 
 
 ## Create a New C++ File

@@ -1,6 +1,7 @@
 # ArduCopter Parameters and Helpful MAVproxy Commands
 
-#
+## Video Tutorial at https://youtu.be/A-JaRgtljLg
+
 ## Common MAVproxy Commands
 
 ```

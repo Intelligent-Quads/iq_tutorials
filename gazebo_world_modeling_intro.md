@@ -1,5 +1,7 @@
 # Intro to Gazebo World Modeling
 
+## Video Tutorial at https://youtu.be/gpk8mQhhI4s
+
 ## Install Mercurial 
 ```
 sudo apt install mercurial

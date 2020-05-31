@@ -1,5 +1,7 @@
 # Introduction to YOLO/Darknet Image Recognition 
 
+## Video Tutorial at https://youtu.be/SiVexS6Zrr8
+
 ## Install CUDA 
 Cuda is a library that allows programs to take advantage of your GPU as a computing resource. YOLO will run without Cuda, but the algorithm is up to 500 x more quick with Cuda. To install Cuda, run 
 

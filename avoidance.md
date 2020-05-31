@@ -1,5 +1,7 @@
 # Drone Obstacle Avoidance
 
+## Video Tutorial at https://youtu.be/-jgRhJKBXhs
+
 This tutorial will teach how to use a 2d lidar to detect and avoid obstacles using the potential field method.
 
 ## Create Obstacle Avoidance Program and add to CMakeLists

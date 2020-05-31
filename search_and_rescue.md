@@ -1,5 +1,7 @@
 # Simple Search and Rescue Program
 
+## Video Tutorial at https://youtu.be/LYtpJqYYMB0
+
 In this tutorial, we will be combining all of our skills together to make a drone that will autonomously look for a missing hiker in the hills. We will use YOLO to identify the person and we will use a modified version of our waypoint program to control where the drone. 
 
 ## Create a New File in iq_gnc 

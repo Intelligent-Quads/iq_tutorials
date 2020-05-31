@@ -1,5 +1,7 @@
 # Adding a Sensor to a Gazebo Robot 
 
+## Video Tutorial at https://youtu.be/0zQ8iFgw6uk
+
 This tutorial will go how to add an existing gazebo sensor to an existing gazebo robot.
 
 ## Available Plugins List
