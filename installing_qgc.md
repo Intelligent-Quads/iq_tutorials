@@ -33,7 +33,7 @@ wget https://s3-us-west-2.amazonaws.com/qgroundcontrol/latest/QGroundControl.App
 Change permissions and run 
 ```
 chmod +x ./QGroundControl.AppImage 
-./QGroundControl.AppImage  #\(or double click\)
+./QGroundControl.AppImage  **(or double click)**
 ```
 
 ## Run SITL and connect with Q Ground
