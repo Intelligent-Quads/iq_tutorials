@@ -58,7 +58,7 @@ We will then add the function `init_publisher_subscriber()`. This function takes
 init_publisher_subscriber(gnc_node);
 ```
 
-we will then add the following functions to handle preflight opperations 
+we will then add the following functions to handle preflight operations 
 ```
 	// wait for FCU connection
 	wait4connect();
