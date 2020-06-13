@@ -8,7 +8,9 @@ Each of the bellow tutorials has an associated video tutorial. Be sure to checko
 
 Come be a part of the growing community of drone application developers! Join the the conversation in our [discord](https://discord.gg/xZjXaAf).
 
-## List of Tutorials
+---
+
+## Software Development Tutorials
 
 [Installing Ardupilot and MAVProxy](Installing_Ardupilot.md)
 
@@ -45,6 +47,11 @@ Come be a part of the growing community of drone application developers! Join th
 [Using an RC Controller with MAVproxy](rc_controller.md)
 
 [Drone Swarms with Ardupilot](swarming_ardupilot.md)
+
+---
+## Multi-rotor Design Tutorials
+
+[Design Principals](design_princepals.md)
 
 ---
 
