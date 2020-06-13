@@ -53,6 +53,12 @@ update global variables
 source ~/.bashrc
 ```
 
+install geographiclib dependancy 
+```
+sudo ~/catkin_ws/src/mavros/mavros/scripts/install_geographiclib_datasets.sh
+```
+
+
 ## 4. Clone IQ Simulation ROS package 
 
 ```
