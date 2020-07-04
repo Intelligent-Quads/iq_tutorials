@@ -49,6 +49,7 @@ Come be a part of the growing community of drone application developers! Join th
 [Drone Swarms with Ardupilot](docs/swarming_ardupilot.md)
 
 [Drone Swarms with Ardupilot+MAVROS](docs/multi_mavros_drones.md)
+
 ---
 ## Multi-rotor Design Tutorials
 
