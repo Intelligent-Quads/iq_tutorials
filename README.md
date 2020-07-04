@@ -8,8 +8,6 @@ Each of the bellow tutorials has an associated video tutorial. Be sure to checko
 
 Come be a part of the growing community of drone application developers! Join the the conversation in our [discord](https://discord.gg/xZjXaAf).
 
----
-
 ## Software Development Tutorials
 
 [Installing Ardupilot and MAVProxy](docs/Installing_Ardupilot.md)
@@ -50,18 +48,26 @@ Come be a part of the growing community of drone application developers! Join th
 
 [Drone Swarms with Ardupilot+MAVROS](docs/multi_mavros_drones.md)
 
----
 ## Multi-rotor Design Tutorials
 
 [Design Principals](docs/design_princepals.md)
 
----
+## Associated Repos 
+
+[iq_sim](https://github.com/Intelligent-Quads/iq_sim)
+- Repo containing helpful gazebo worlds designed for ardupilot sitl
+
+[iq_gnc](https://github.com/Intelligent-Quads/iq_gnc)
+- Repo containing iq gnc function which are helpful for designing guidance programs for drones. The repo also contains a variety of example mission programs. 
+
 
 ## Resources 
 
 [Common Linux, ROS and MAVproxy Commands](docs/helpful_commands.md)
 
 [GNC API Documentation](docs/GNC_functions_documentation.md)
+
+---
 
 ## References 
 http://ardupilot.org/copter/index.html
