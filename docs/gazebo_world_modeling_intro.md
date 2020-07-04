@@ -2,17 +2,13 @@
 
 ## Video Tutorial at https://youtu.be/gpk8mQhhI4s
 
-## Install Mercurial 
-```
-sudo apt install mercurial
-```
 
-## Add More Models
+## Add the Open Gazebo Models Database
 
-Use Mercurial to get a bunch of open source gazebo models from the Open Source Robotics Foundation (OSRF) 
+Use git to get a bunch of open source gazebo models from the Open Source Robotics Foundation (OSRF) 
 
 ```
-hg clone https://bitbucket.org/osrf/gazebo_models ~/gazebo_ws/gazebo_models
+git clone https://github.com/osrf/gazebo_models.git
 ```
 Add Models path to the bashrc
 ```
