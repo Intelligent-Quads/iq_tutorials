@@ -66,12 +66,6 @@ Next we are going to setup a new launch file to launch each drone's gnc code. Cr
 			<param name="use_sim_time"  value="true" />
 		</node>
 	</group>
-	<group>	
-		<node pkg="iq_gnc" type="square" name="square4" output="screen" ns="/drone4">
-			<param name="namespace" value="/drone4"/>
-			<param name="use_sim_time"  value="true" />
-		</node>
-	</group>
 </launch>
 ```
 
