@@ -1,5 +1,5 @@
 # Intelligent Quads Tutorials
-
+![iq](docs/imgs/iq.jpg)
 Intelligent Quads is a community dedicated to helping people learn how to become a developer of intelligent drone applications.
 
 Each of the bellow tutorials has an associated video tutorial. Be sure to checkout the [Intelligent Quads Youtube Channel!](https://www.youtube.com/channel/UCuZy0c-uvSJglnZfQC0-uaQ)
@@ -50,7 +50,7 @@ Come be a part of the growing community of drone application developers! Join th
 
 ## Multi-rotor Design Tutorials
 
-[Design Principals](docs/design_princepals.md)
+[Design Principals - Work In Progress](docs/design_princepals.md)
 
 ## Associated Repos 
 
