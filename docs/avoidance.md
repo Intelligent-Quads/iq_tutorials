@@ -134,7 +134,7 @@ if(avoid)
 		avoidance_vector_y = 3 * (avoidance_vector_y/sqrt(pow(avoidance_vector_x,2) + pow(avoidance_vector_y,2)));
 	}
 	geometry_msgs::Point current_pos;
-	current_pos = get_current_loaction();
+	current_pos = get_current_location();
 	set_destination(avoidance_vector_x + current_pos.x, avoidance_vector_y + current_pos.y, 2, 0);	
 }
 
