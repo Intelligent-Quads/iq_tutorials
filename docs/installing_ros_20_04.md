@@ -18,7 +18,7 @@ Code blocks are meant to be typed in Terminal windows. "Control+Alt+T" opens a n
 
 We use `catkin build` instead of `catkin_make`. Please install the following:
 ```
-sudo apt-get install python-wstool python-rosinstall-generator python3-catkin-lint python3-pip
+sudo apt-get install python3-wstool python3-rosinstall-generator python3-catkin-lint python3-pip
 pip3 install osrf-pycommon
 ```
 
@@ -69,7 +69,7 @@ git clone https://github.com/Intelligent-Quads/iq_sim.git
 Our repository should now be copied to `~/catkin_ws/src/iq_sim/` (don't run this line. This is just saying that if you browse in the file manager, you will see those folders).
 
 ## 5. Build instructions
-   Inside `catkin_ws`, run `catkin build`:
+Inside `catkin_ws`, run `catkin build`:
 
 ```
 cd ~/catkin_ws

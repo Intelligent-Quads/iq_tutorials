@@ -16,7 +16,7 @@ Come be a part of the growing community of drone application developers! Join th
 
 [Installing QGroundControl](docs/installing_qgc.md)
 
-[Installing Gazebo and ArduPilot Plugin](docs/installing_gazebo_arduplugin.md)
+[Installing Gazebo and ArduPilot Plugin \[***18.04-20.04***\]](docs/installing_gazebo_arduplugin.md)
 
 [Installing ROS and MAVROS \[***18.04***\]](docs/installing_ros.md)
 
