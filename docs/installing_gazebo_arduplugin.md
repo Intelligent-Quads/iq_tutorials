@@ -8,7 +8,7 @@ Robot simulation is an essential tool in every roboticist's toolbox. A well-desi
 
 for more infromation on gazebo checkout http://gazebosim.org/
 
-## Install Gazebo
+## Install Gazebo [***18.04***]
 
 Setup your computer to accept software from http://packages.osrfoundation.org:
 ```
@@ -26,18 +26,30 @@ sudo apt update
 ```
 
 Install Gazebo:
+### Ubuntu [***18.04***]
 ```
 sudo apt install gazebo9 libgazebo9-dev
+```
+### Ubuntu [***20.04***]
+```
+sudo apt-get install gazebo11 libgazebo11-dev
 ```
 
 for more detailed instructions for installing gazebo checkout http://gazebosim.org/tutorials?tut=install_ubuntu
 
-## Install Gazebo plugin for APM (ArduPilot Master):
+
+## Install Gazebo plugin for APM (ArduPilot Master) :
 ```
 cd ~
 git clone https://github.com/khancyr/ardupilot_gazebo.git
 cd ardupilot_gazebo
+```
+***Ubuntu 18.04 only*** checkout dev
+```
 git checkout dev
+```
+build and install plugin
+```
 mkdir build
 cd build
 cmake ..
