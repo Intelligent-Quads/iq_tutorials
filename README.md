@@ -10,13 +10,17 @@ Come be a part of the growing community of drone application developers! Join th
 
 ## Software Development Tutorials
 
-[Installing Ardupilot and MAVProxy](docs/Installing_Ardupilot.md)
+[Installing Ardupilot and MAVProxy \[***18.04***\]](docs/Installing_Ardupilot.md)
+
+[Installing Ardupilot and MAVProxy \[***20.04***\]](docs/Installing_Ardupilot_20_04.md)
 
 [Installing QGroundControl](docs/installing_qgc.md)
 
 [Installing Gazebo and ArduPilot Plugin](docs/installing_gazebo_arduplugin.md)
 
-[Installing ROS and MAVROS](docs/installing_ros.md)
+[Installing ROS and MAVROS \[***18.04***\]](docs/installing_ros.md)
+
+[Installing ROS and MAVROS \[***20.04***\]](docs/installing_ros_20_04.md)
 
 [Introduction to ROS and ROS Tools for Drone Development](docs/ros_intro.md)
 
