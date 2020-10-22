@@ -2,7 +2,7 @@
 
 ### Video Tutorial at https://youtu.be/EmIjedzHwzI
 
-In this tutorial we are using **Ubuntu 30.04** and **ROS Noetic**
+In this tutorial we are using **Ubuntu 20.04** and **ROS Noetic**
 
 Code blocks are meant to be typed in Terminal windows. "Control+Alt+T" opens a new Terminal window.
 
