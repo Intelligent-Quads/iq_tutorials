@@ -52,6 +52,10 @@ Come be a part of the growing community of drone application developers! Join th
 
 [Drone Swarms with Ardupilot+MAVROS](docs/multi_mavros_drones.md)
 
+## Remote Software Development/ Work from Home
+
+[Using/Installing Gazebo Web](docs/gzweb_install.md)
+
 ## Multi-rotor Design Tutorials
 
 [Design Principals - Work In Progress](docs/design_princepals.md)
