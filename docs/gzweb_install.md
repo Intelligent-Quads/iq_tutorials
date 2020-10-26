@@ -1,6 +1,6 @@
 # Installing and Using GZweb
 
-This tutorial will go over how to install a Gazebo web server and how to use gazebo from your web browser. I am currently looking at ways to adapt to the new normal. This is leading me to explore web based tools to create a virtual lab enviorment allowing engineers to work without having to ever meet in person. This imo is a very exciting prospect as it has the potential to liberate robotics engineers from having to work in one location. Hopfully digital nomadicy will be an option for us roboticists in the future. 
+This tutorial will go over how to install a Gazebo web server and how to use gazebo from your web browser. I am currently looking at ways to adapt to the new normal. This is leading me to explore web based tools to create a virtual lab environment allowing engineers to work without having to ever meet in person. This imo is a very exciting prospect as it has the potential to liberate robotics engineers from having to work in one location. Hopefully digital nomadicy will be an option for us roboticists in the future. 
 
 This tutorial was made and tested with ***Ubuntu 20.04***. 
 
@@ -18,10 +18,10 @@ sudo apt install libjansson-dev nodejs npm libboost-dev imagemagick libtinyxml-d
 ```
 cd ~; git clone https://github.com/osrf/gzweb
 ```
-checkout release branch
+there is a problem with gzweb building on 20.04 with gazebo11. this is fixed on the below dev branch. I will do my best to update the tutorial when the branch is finally merged.
 ```
 cd ~/gzweb
-git checkout gzweb_1.4.0
+git checkout fix_build_gz11
 ```
 The first time you build, you'll need to gather all the Gazebo models which you want to simulate in the right directory ('http/client/assets') and prepare them for the web.
 
@@ -39,8 +39,18 @@ for more information take a look at the n github https://github.com/tj/n
 
 ## Installing node 8.0.0
 ```
-sudo n 8.0.0
+sudo n 8.14.0
 ```
+
+## Set Python to run as Python 2 Temporarily 
+
+Python 3 is now the default python version on Ubuntu 20.04. For this reason I am using `update-alternatives` to switch between python versions.
+
+to switch python version to 2 run 
+```
+sudo update-alternatives --config python
+``` 
+select `1` to change to python 2 
 
 ## Build GZweb
 Run the deploy script, this downloads models from the web and may take a couple of minutes, see more options below.
@@ -48,3 +58,18 @@ Run the deploy script, this downloads models from the web and may take a couple 
 npm run deploy --- -m
 ```
     Note: the -m flag tells the deploy script to grab all the models from the model database and any other models in your GAZEBO_MODEL_PATH. For all subsequent builds, the -m flag will not be needed
+
+# gzweb
+first launch a gazebo world for example 
+```
+roslaunch iq_sim runway.launch
+```
+
+then launch gzweb
+```
+cd ~/gzweb
+npm start
+```
+# Optimization 
+There are a variety of commands that can be used to optimize gazebo web for your application. be sure to take a look at http://gazebosim.org/tutorials?tut=gzweb_install&cat=gzweb to get the most out of your install 
+
