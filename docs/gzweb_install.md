@@ -70,6 +70,30 @@ then launch gzweb
 cd ~/gzweb
 npm start
 ```
+# Luanching Gazebo without the gui
+
+In order to launch a gazebo world remotely we don't want to launch a gzclient instance on the server. to avoid the we will need to add the `gui` argument to our gazebo roslaunch files. for example we will need to add the following to the runway.launch file in iq_sim
+```
+<arg name="gui" default="true"/>
+```
+and 
+```
+<arg name="gui" value="$(arg gui)"/>
+```
+our `runway.launch` would now look like  
+```
+<launch>
+  <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+  <arg name="gui" default="true"/>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find iq_sim)/worlds/runway.world"/>
+    <arg name="gui" value="$(arg gui)"/>
+    <!-- more default parameters can be changed here -->
+  </include>
+</launch>
+
+```
+
 # Optimization 
 There are a variety of commands that can be used to optimize gazebo web for your application. be sure to take a look at http://gazebosim.org/tutorials?tut=gzweb_install&cat=gzweb to get the most out of your install 
 
