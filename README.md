@@ -75,6 +75,14 @@ Come be a part of the growing community of drone application developers! Join th
 
 [GNC API Documentation](docs/GNC_functions_documentation.md)
 
+## Discounts on Dev Resources for Students 
+
+[Github Student Developer Pack](https://education.github.com/pack)
+
+## Affiliate Links 
+
+[Digital Ocean $100 for 60 days credit](https://m.do.co/c/6752af521fd4)
+
 ---
 
 ## References 
