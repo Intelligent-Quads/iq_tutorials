@@ -56,6 +56,8 @@ Come be a part of the growing community of drone application developers! Join th
 
 [Using/Installing Gazebo Web](docs/gzweb_install.md)
 
+[Setting up a VPN Server](docs/setting_up_a_vpn_server.md)
+
 ## Multi-rotor Design Tutorials
 
 [Design Principals - Work In Progress](docs/design_princepals.md)

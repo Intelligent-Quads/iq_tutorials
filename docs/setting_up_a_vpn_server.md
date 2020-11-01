@@ -1,14 +1,12 @@
 # Setting Up an Openvpn Server to Create a Virtual Robotics Lab Network 
 
-***WORK IN PROGRESS***
+Since the beginning of the pandemic, roboticists have been struggling to use their lab resources and do networking in a secure way. By using a VPN we can set up a network which mimics having all your devices on the same network in your lab. A VPN will encrypt all traffic allowing you to securely control simulation computers or robots remotely as long as you have an internet connection.
 
-Since the beginning of the pandemic, roboticists have been stuggling to do use their lab resources and do networking in a secure way. By using a VPN we can setup a network which mimics having all your devices on the same network in your lab. A VPN will encrypt all traffic allowing you to securely control simulation computers or robots remotely as long as you have an internet connection.
-
-![vpn co-ops](imgs/vpn_con_ops.png)
+![vpn con-ops](imgs/vpn_con_ops.png)
 
 ## VPN Server
 
-The first thing we need to setup is a VPN server. This is a computer that will manage who can connect and will route all VPN traffic. In this tutorial I will use digital ocean to setup the vpn server. For $5 a month we can create a linux node that we can use as our VPN server. 
+The first thing we need to set up is a VPN server. This is a computer that will manage who can connect and will route all VPN traffic. In this tutorial I will use digital ocean to set up the vpn server. For $5 a month we can create a linux node that we can use as our VPN server. 
 
 ### Digital Ocean Discounts
 
@@ -18,7 +16,7 @@ If you are not a student, you can use my affiliate link which will grant you $10
 
 ### Creating a Digital Ocean Node 
 
-In the top left corner click `new project`. Fill out relvent information. Then click `Get Started with a Droplet`. 
+In the top left corner click `new project`. Fill out relevant information. Then click `Get Started with a Droplet`. 
 
 A basic ubuntu 20.04 node will be perfect for this application.
 ![node settings](imgs/node_settings1.JPG)
@@ -37,9 +35,35 @@ https://nextsouls.com/how-to-install-openvpn-using-script-installer/
 
 ## Client Setup 
 
-On the VPN Server we can re-runt the install script to generate client connect files.
+On the VPN Server we can re-run the install script to generate client connect files.
 
 ## Installing Openvpn Clients 
+
+### Ubuntu Client Install
+
+```
+sudo apt install openvpn3
+```
+
+### Connect from the Command Line
+```
+openvpn3 config-import --config ${client.ovpn}
+```
+connect via gui
+
+### Connect via GUI
+
+ You can also connect to your vpn via the ubuntu settings. Go to Network and click the plus next to VPN.
+
+![vpn setup1](imgs/vpn_gui1.png)
+
+Then click `import from file`
+
+![add vpn](imgs/add_vpn.png)
+
+add your `.ovpn` file and click `add`.
+
+### Windows Mac
 
 Download client: https://openvpn.net/download-open-vpn/
 
