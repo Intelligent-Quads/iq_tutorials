@@ -47,7 +47,7 @@ sudo apt install openvpn
 
 ### Connect from the Command Line
 ```
-openvpn config-import --config ${client.ovpn}
+sudp openvpn --config ${client.ovpn}
 ```
 connect via gui
 
