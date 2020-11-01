@@ -42,12 +42,12 @@ On the VPN Server we can re-run the install script to generate client connect fi
 ### Ubuntu Client Install
 
 ```
-sudo apt install openvpn3
+sudo apt install openvpn
 ```
 
 ### Connect from the Command Line
 ```
-openvpn3 config-import --config ${client.ovpn}
+openvpn config-import --config ${client.ovpn}
 ```
 connect via gui
 
