@@ -1,5 +1,7 @@
 # Installing and Using GZweb
 
+## Video Tutorial at https://youtu.be/zukIsbYSCUs
+
 This tutorial will go over how to install a Gazebo web server and how to use gazebo from your web browser. I am currently looking at ways to adapt to the new normal. This is leading me to explore web based tools to create a virtual lab environment allowing engineers to work without having to ever meet in person. This imo is a very exciting prospect as it has the potential to liberate robotics engineers from having to work in one location. Hopefully digital nomadicy will be an option for us roboticists in the future. 
 
 This tutorial was made and tested with ***Ubuntu 20.04***. 
