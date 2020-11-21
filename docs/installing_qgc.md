@@ -1,6 +1,8 @@
 # Intalling QGroundControl 
 
-### Video tutorial at https://youtu.be/qLQQbhKDQ6M
+### Video tutorial (18.04) at https://youtu.be/qLQQbhKDQ6M
+
+### Video Tutorial (20.04) at https://youtu.be/1FpJvUVPxL0
 
 ## Overview 
 

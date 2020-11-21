@@ -58,6 +58,8 @@ Come be a part of the growing community of drone application developers! Join th
 
 [Setting up a VPN Server](docs/setting_up_a_vpn_server.md)
 
+[View a ROS Image Stream](docs/web_video_server.md)
+
 ## Multi-rotor Design Tutorials
 
 [Design Principals - Work In Progress](docs/design_princepals.md)

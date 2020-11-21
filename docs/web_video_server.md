@@ -1,5 +1,7 @@
 # Video Web Server
 
+## Video Tutorial at https://youtu.be/bh9mKgiIJAk
+
 This tutorial is highlighting a great opensource project that is super convinient for viewing cameras on a robot. The packege essentially sets up a webserver on your robot that allows you to select and view image streams from your web browser. Becuase of the web based nature anyone on the same network will have the ability to monitor cameras. This could really aid in the easy of monitoring and dubugging programs in a lab setting. This combined with a VPN could allow team members to view real time video data from anywhere in the world!
 
 ## Installation

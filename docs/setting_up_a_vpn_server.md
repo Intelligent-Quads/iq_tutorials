@@ -1,5 +1,7 @@
 # Setting Up an Openvpn Server to Create a Virtual Robotics Lab Network 
 
+### Video tutorial at https://youtu.be/WoRyW4tyxo0
+
 Since the beginning of the pandemic, roboticists have been struggling to use their lab resources and do networking in a secure way. By using a VPN we can set up a network which mimics having all your devices on the same network in your lab. A VPN will encrypt all traffic allowing you to securely control simulation computers or robots remotely as long as you have an internet connection.
 
 ![vpn con-ops](imgs/vpn_con_ops.png)
