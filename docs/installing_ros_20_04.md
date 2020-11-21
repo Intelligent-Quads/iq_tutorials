@@ -18,7 +18,7 @@ Code blocks are meant to be typed in Terminal windows. "Control+Alt+T" opens a n
 
 We use `catkin build` instead of `catkin_make`. Please install the following:
 ```
-sudo apt-get install python3-wstool python3-rosinstall-generator python3-catkin-lint python3-pip
+sudo apt-get install python3-wstool python3-rosinstall-generator python3-catkin-lint python3-pip python3-catkin-tools
 pip3 install osrf-pycommon
 ```
 
