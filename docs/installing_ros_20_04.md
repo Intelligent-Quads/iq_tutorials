@@ -68,6 +68,11 @@ git clone https://github.com/Intelligent-Quads/iq_sim.git
 ```
 Our repository should now be copied to `~/catkin_ws/src/iq_sim/` (don't run this line. This is just saying that if you browse in the file manager, you will see those folders).
 
+run the following to tell gazebo where to look for the iq models 
+```
+echo "GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:$HOME/catkin_ws/src/iq_sim/models" >> ~/.bashrc
+```
+
 ## 5. Build instructions
 Inside `catkin_ws`, run `catkin build`:
 
