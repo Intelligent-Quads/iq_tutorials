@@ -12,7 +12,7 @@ Come be a part of the growing community of drone application developers! Join th
 
 Donations are not required or expected for use. All work is licensed on the MIT license. That being said, if you find value in my work consider donating to help me create more content.  
 
-[<img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg">](paypal.me/intelligentquads)
+[<img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg">](https://www.paypal.me/intelligentquads)
 
 [paypal.me/intelligentquads](https://www.paypal.com/paypalme/intelligentquads)
 
