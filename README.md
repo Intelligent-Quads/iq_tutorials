@@ -14,7 +14,7 @@ Donations are not required or expected for use. All work is licensed on the MIT 
 
 [<img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg">](paypal.me/intelligentquads)
 
-[paypal.me/intelligentquads](paypal.me/intelligentquads)
+[paypal.me/intelligentquads](https://www.paypal.com/paypalme/intelligentquads)
 
 
 
