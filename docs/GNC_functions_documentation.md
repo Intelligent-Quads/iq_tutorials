@@ -12,6 +12,12 @@ Returns 	n/a
 ```
 This function is used to command the drone to fly to a waypoint. These waypoints should be specified in the local reference frame. This is typically defined from the location the drone is launched. Psi is counter clockwise rotation following the drone’s reference frame defined by the x axis through the right side of the drone with the y axis through the front of the drone.
 
+## int set_speed(float speed__mps)
+```
+returns 0 for success
+```
+This function is used to change the speed of the vehicle in guided mode. it takes the speed in meters per second as a float as the input
+
 ## void spinOffSetPub()
 ```
 Returns 	n/a

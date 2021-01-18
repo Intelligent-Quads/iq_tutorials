@@ -2,11 +2,21 @@
 ![iq](docs/imgs/iq.JPG)
 Intelligent Quads is a community dedicated to helping people learn how to become developers of intelligent drone applications.
 
-Each of the bellow tutorials has an associated video tutorial. Be sure to checkout the [Intelligent Quads Youtube Channel!](https://www.youtube.com/channel/UCuZy0c-uvSJglnZfQC0-uaQ)
+Each of the below tutorials has an associated video tutorial. Be sure to checkout the [Intelligent Quads Youtube Channel!](https://www.youtube.com/channel/UCuZy0c-uvSJglnZfQC0-uaQ)
 
 ## Community Discord Server
 
 Come be a part of the growing community of drone application developers! Join the the conversation in our [discord](https://discord.gg/xZjXaAf).
+
+## Support My Work
+
+Donations are not required or expected for use. All work is licensed on the MIT license. That being said, if you find value in my work consider donating to help me create more content.  
+
+[<img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg">](paypal.me/intelligentquads)
+
+paypal.me/intelligentquads
+
+
 
 ## Software Development Tutorials
 
