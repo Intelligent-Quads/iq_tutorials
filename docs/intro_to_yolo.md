@@ -9,7 +9,8 @@ Cuda is a library that allows programs to take advantage of your GPU as a comput
 sudo apt install nvidia-cuda-toolkit
 ```
 
-## Clone Darknet/YOLO 
+## **Ubuntu 18.04**
+### Clone Darknet/YOLO 
 
 Clone the darknet repo into our catkin_ws
 
@@ -18,7 +19,7 @@ cd ~/catkin_ws/src
 git clone --recursive https://github.com/leggedrobotics/darknet_ros.git
 ```
 
-## Build Darknet 
+### Build Darknet 
 ```
 catkin build -DCMAKE_BUILD_TYPE=Release 
 ```
@@ -26,6 +27,23 @@ on Ubuntu 18.04 you may need to run
 ```
 catkin build -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=/usr/bin/gcc-6
 ```
+
+## **Ubuntu 20.04**
+```
+cd ~/catkin_ws/src
+git clone https://github.com/kunaltyagi/darknet_ros.git
+git checkout opencv4
+git submodule update --init --recursive
+```
+### Build Darknet 
+```
+catkin build -DCMAKE_BUILD_TYPE=Release 
+```
+if you run into errors try running the following 
+```
+catkin build -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=/usr/bin/gcc-8
+```
+
 
 ## Configure YOLO/Darknet
 
