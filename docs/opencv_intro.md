@@ -2,6 +2,20 @@
 
 This tutorial assumes you have installed the ardupilot-sitl with the ardupilot gazebo plugin. This tutorial will teach you how to create a simple computer vision algorithm to be run on a ROS image stream.
 
+This tutorial is based on the cv_bride tutorial http://wiki.ros.org/cv_bridge/Tutorials/UsingCvBridgeToConvertBetweenROSImagesAndOpenCVImages
+
+## Concept of Operation 
+
+It is important to hav an understanding of how this might be used on a real drone and the differences that exist between our real aircraft and the simulation environment. 
+
+Real Aircraft:
+![real aircraft](imgs/aircraft_vision.png)
+
+On a real ardupilot drone, vision processing is often done on a companion computer. This allows the Flight Control Unit (FCU) to be dedicated to controlling the aircraft while less flight critical tasks are off-loaded to a secondary computer, usually more optimized for high level autonomy tasks.  
+
+Simulated Aircraft:
+![sim aircraft](imgs/sim_vision.png)
+In our simulated environment we will be using the gazebo ros camera plugin which will publish an image stream of what our simulated camera is seeing. On a real drone we might use the [video_stream_opencv](http://wiki.ros.org/video_stream_opencv) package to create the video stream from a real camera. In the simulated environment we will be skipping this step and having gazebo do this job for us. 
 ## Pre-Req
 
 Clone the iq_vision ros package
@@ -28,9 +42,13 @@ the following code contains the includes the needed ros libraries as well as the
 #include <image_transport/image_transport.h>
 #include <cv_bridge/cv_bridge.h>
 #include <sensor_msgs/image_encodings.h>
+#ifdef ROS_NOETIC
 #include <opencv4/opencv2/imgproc/imgproc.hpp>
 #include <opencv4/opencv2/highgui/highgui.hpp>
-
+#else 
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#endif
 // Add vision object here
 
 int main(int argc, char** argv)
@@ -98,3 +116,6 @@ public:
 };
 
 ```
+
+The above code shows how to subscribe to a ros image stream and run an opencv image processing algorithm on the images. The method `imageCb` will be called when receiving a new image in the image stream `/webcam/image_raw`
+
