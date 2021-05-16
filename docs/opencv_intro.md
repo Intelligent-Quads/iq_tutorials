@@ -4,6 +4,7 @@ This tutorial assumes you have installed the ardupilot-sitl with the ardupilot g
 
 This tutorial is based on the cv_bride tutorial http://wiki.ros.org/cv_bridge/Tutorials/UsingCvBridgeToConvertBetweenROSImagesAndOpenCVImages
 
+
 ## Concept of Operation 
 
 It is important to hav an understanding of how this might be used on a real drone and the differences that exist between our real aircraft and the simulation environment. 
@@ -122,3 +123,89 @@ public:
 
 The above code shows how to subscribe to a ros image stream and run an opencv image processing algorithm on the images. The method `imageCb` will be called when receiving a new image in the image stream `/webcam/image_raw`
 
+finnally we need to declare an instance of our `ImageConverter` object. Add the following in our main function right before `ros::spin();`
+
+```
+ImageConverter ic;
+```
+
+The finish Code is shown below
+```
+#include <ros/ros.h>
+#include <image_transport/image_transport.h>
+#include <cv_bridge/cv_bridge.h>
+#include <sensor_msgs/image_encodings.h>
+#ifdef ROS_NOETIC
+#include <opencv4/opencv2/imgproc/imgproc.hpp>
+#include <opencv4/opencv2/highgui/highgui.hpp>
+#else 
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#endif
+// Add vision object here
+
+class ImageConverter
+{
+  ros::NodeHandle nh_;
+  image_transport::ImageTransport it_;
+  image_transport::Subscriber image_sub_;
+  image_transport::Publisher image_pub_;
+
+public:
+  ImageConverter()
+    : it_(nh_)
+  {
+    // Subscrive to input video feed and publish output video feed
+    image_sub_ = it_.subscribe("/webcam/image_raw", 1,
+      &ImageConverter::imageCb, this);
+    image_pub_ = it_.advertise("/image_converter/output_video", 1);
+
+    cv::namedWindow("source");
+    cv::namedWindow("canny");
+  }
+
+  ~ImageConverter()
+  {
+    cv::destroyWindow("source");
+    cv::destroyWindow("canny");
+  }
+
+  void imageCb(const sensor_msgs::ImageConstPtr& msg)
+  {
+    cv_bridge::CvImagePtr cv_ptr;
+    try
+    {
+      cv_ptr = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::BGR8);
+    }
+    catch (cv_bridge::Exception& e)
+    {
+      ROS_ERROR("cv_bridge exception: %s", e.what());
+      return;
+    }
+
+    // Run Canny edge detector on image
+    cv::Mat src = cv_ptr->image;
+    cv::Mat dst;
+    cv::Canny( src, dst, 0, 0, 3 );
+
+    // Update GUI Window
+    cv::imshow("source", src);
+    cv::imshow("canny", dst);
+    cv::waitKey(3);
+
+    sensor_msgs::ImagePtr msg_out = cv_bridge::CvImage(std_msgs::Header(), "mono8", dst).toImageMsg();
+    // Output modified video stream
+    image_pub_.publish(msg_out);
+  }
+};
+
+
+int main(int argc, char** argv)
+{
+  ros::init(argc, argv, "image_converter");
+  ImageConverter ic;
+  ros::spin();
+  return 0;
+}
+
+```
