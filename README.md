@@ -62,6 +62,10 @@ Donations are not required or expected for use. All work is licensed on the MIT 
 
 [Drone Swarms with Ardupilot+MAVROS](docs/multi_mavros_drones.md)
 
+## OpenCV In Drone Applications
+
+[Basic OpenCV with ROS](docs/opencv_intro.md)
+
 ## Remote Software Development/ Work from Home
 
 [Using/Installing Gazebo Web](docs/gzweb_install.md)
