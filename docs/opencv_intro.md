@@ -79,12 +79,14 @@ public:
       &ImageConverter::imageCb, this);
     image_pub_ = it_.advertise("/image_converter/output_video", 1);
 
-    cv::namedWindow(OPENCV_WINDOW);
+    cv::namedWindow("source");
+    cv::namedWindow("canny");
   }
 
   ~ImageConverter()
   {
-    cv::destroyWindow(OPENCV_WINDOW);
+    cv::destroyWindow("source");
+    cv::destroyWindow("canny");
   }
 
   void imageCb(const sensor_msgs::ImageConstPtr& msg)
@@ -103,15 +105,16 @@ public:
     // Run Canny edge detector on image
     cv::Mat src = cv_ptr->image;
     cv::Mat dst;
-    Canny( src, dst, 0, 0, 3 );
+    cv::Canny( src, dst, 0, 0, 3 );
 
     // Update GUI Window
-    cv::imshow(OPENCV_WINDOW, src);
+    cv::imshow("source", src);
     cv::imshow("canny", dst);
     cv::waitKey(3);
 
+    sensor_msgs::ImagePtr msg_out = cv_bridge::CvImage(std_msgs::Header(), "mono8", dst).toImageMsg();
     // Output modified video stream
-    image_pub_.publish(cv_ptr->toImageMsg());
+    image_pub_.publish(msg_out);
   }
 };
 
