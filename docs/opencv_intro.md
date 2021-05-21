@@ -2,12 +2,12 @@
 
 This tutorial assumes you have installed the ardupilot-sitl with the ardupilot gazebo plugin. This tutorial will teach you how to create a simple computer vision algorithm to be run on a ROS image stream.
 
-This tutorial is based on the cv_bride tutorial http://wiki.ros.org/cv_bridge/Tutorials/UsingCvBridgeToConvertBetweenROSImagesAndOpenCVImages
+This tutorial is based on the cv_bridge tutorial http://wiki.ros.org/cv_bridge/Tutorials/UsingCvBridgeToConvertBetweenROSImagesAndOpenCVImages
 
 
 ## Concept of Operation 
 
-It is important to hav an understanding of how this might be used on a real drone and the differences that exist between our real aircraft and the simulation environment. 
+It is important to have an understanding of how this might be used on a real drone and the differences that exist between our real aircraft and the simulation environment. 
 
 Real Aircraft:
 ![real aircraft](imgs/aircraft_vision.png)
@@ -16,7 +16,7 @@ On a real ardupilot drone, vision processing is often done on a companion comput
 
 Simulated Aircraft:
 ![sim aircraft](imgs/sim_vision.png)
-In our simulated environment we will be using the gazebo ros camera plugin which will publish an image stream of what our simulated camera is seeing. On a real drone we might use the [video_stream_opencv](http://wiki.ros.org/video_stream_opencv) package to create the video stream from a real camera. In the simulated environment we will be skipping this step and having gazebo do this job for us. 
+In our simulated environment, we will be using the gazebo ros camera plugin which will publish an image stream of what our simulated camera is seeing. On a real drone, we might use the [video_stream_opencv](http://wiki.ros.org/video_stream_opencv) package to create the video stream from a real camera. In the simulated environment, we will be skipping this step and having gazebo do this job for us. 
 ## Pre-Req
 
 Clone the iq_vision ros package
@@ -26,7 +26,7 @@ git clone https://github.com/Intelligent-Quads/iq_vision.git
 
 ## Setup 
 
-create the file `canny_edge.cpp` in `iq_vision/src`
+Create the file `canny_edge.cpp` in `iq_vision/src`
 
 Add the following line to the end of the `CMakeLists.txt`
 ```
@@ -36,7 +36,7 @@ target_link_libraries(canny_edge ${catkin_LIBRARIES} ${OpenCV_INCLUDE_DIRS})
 
 ## Setup our ROS node 
 
-the following code contains the includes the needed ros libraries as well as the opencv libraries we will need for the tutorial.
+The following code includes the needed ros libraries as well as the opencv libraries we will need for the tutorial.
 
 ```
 #include <ros/ros.h>
@@ -123,7 +123,7 @@ public:
 
 The above code shows how to subscribe to a ros image stream and run an opencv image processing algorithm on the images. The method `imageCb` will be called when receiving a new image in the image stream `/webcam/image_raw`
 
-finnally we need to declare an instance of our `ImageConverter` object. Add the following in our main function right before `ros::spin();`
+Finally, we need to declare an instance of our `ImageConverter` object. Add the following in our main function right before `ros::spin();`
 
 ```
 ImageConverter ic;
