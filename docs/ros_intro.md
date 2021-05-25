@@ -16,7 +16,7 @@ this time we will launch our gazebo world by launching it with ROS as follows
 ```
 roslaunch iq_sim runway.launch
 ```
-We will also launch the ArduCopter simulator as well. I have made a nice script so that you don't have to remember the big command `cd ~/ardupilot/ArduCopter/ && sim_vehicle.py -v ArduCopter -f gazebo-iris --console` from the previous tutorials. I recommend you move the script to your home folder for ease of access. Do this by running the command below. 
+We will also launch the ArduCopter simulator as well. I have made a nice script so that you don't have to remember the big command `cd ~/ardupilot/Tools/autotest && sim_vehicle.py -v ArduCopter -f gazebo-iris --console` from the previous tutorials. I recommend you move the script to your home folder for ease of access. Do this by running the command below. 
 
 ```
 cp ~/catkin_ws/src/iq_sim/scripts/startsitl.sh ~
