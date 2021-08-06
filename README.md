@@ -62,6 +62,8 @@ Donations are not required or expected for use. All work is licensed on the MIT 
 
 [Drone Swarms with Ardupilot+MAVROS](docs/multi_mavros_drones.md)
 
+[Default Ardupilot Avoidance](docs/proximity/proximity_overview.md)
+
 ## OpenCV In Drone Applications
 
 [Basic OpenCV with ROS](docs/opencv_intro.md)
