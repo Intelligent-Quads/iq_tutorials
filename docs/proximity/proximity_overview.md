@@ -22,6 +22,12 @@ make sure dependencies are up to date. run
 Tools/environment_install/install-prereqs-ubuntu.sh -y
 ```
 
+clean your build environment 
+```
+cd ~/ardupilot 
+./waf clean
+```
+
 In new versions of ardupilot, the sitl assumes you are running from a folder that is unique. This is because, the sitl now stores params and log in file in the directory from which you run the sitl. below is an example of how i now run my sitl.
 ```
 mkdir ~/drone1
