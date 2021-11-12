@@ -14,7 +14,7 @@ Donations are not required or expected for use. All work is licensed on the MIT 
 
 ### Support Via Github Sponsors
 
-<iframe src="https://github.com/sponsors/ericjohnson97/button" title="Sponsor ericjohnson97" height="35" width="116" style="border: 0;"></iframe>
+https://github.com/sponsors/ericjohnson97
 
 ### Support Via Paypal
 
