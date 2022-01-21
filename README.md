@@ -1,5 +1,5 @@
 # Intelligent Quads Tutorials
-![iq](docs/imgs/iq.JPG)
+![iq](docs/imgs/IQ-GitHub-Banner.png)
 Intelligent Quads is a community dedicated to helping people learn how to become developers of intelligent drone applications.
 
 Each of the below tutorials has an associated video tutorial. Be sure to checkout the [Intelligent Quads Youtube Channel!](https://www.youtube.com/channel/UCuZy0c-uvSJglnZfQC0-uaQ)
