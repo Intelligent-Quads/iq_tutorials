@@ -25,7 +25,7 @@ reload profile
 
 ## Checkout Latest Copter Build
 ```
-git checkout Copter-4.0.4
+git checkout Copter-4.1.4
 git submodule update --init --recursive
 ```
 
