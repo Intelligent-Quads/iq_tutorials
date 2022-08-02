@@ -37,6 +37,11 @@ sudo apt-get install gazebo11 libgazebo11-dev
 
 for more detailed instructions for installing gazebo checkout http://gazebosim.org/tutorials?tut=install_ubuntu
 
+## Install Gazebo [***22.04***]
+Default installation: one-liner
+```
+curl -sSL http://get.gazebosim.org | sh
+```
 
 ## Install Gazebo plugin for APM (ArduPilot Master) :
 ```
@@ -69,7 +74,7 @@ echo 'export GAZEBO_MODEL_PATH=~/ardupilot_gazebo/models' >> ~/.bashrc
 
 **NOTE the iris_arducopter_runway is not currently working in gazebo11. The iq_sim worlds DO work**
 
-In one Terminal (Terminal 1), run Gazebo:
+In one Terminal (Terminal 1), run Gazebo (first start can take a while):
 ```
 gazebo --verbose ~/ardupilot_gazebo/worlds/iris_arducopter_runway.world
 ```
