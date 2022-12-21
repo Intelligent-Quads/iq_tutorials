@@ -32,6 +32,7 @@ catkin build -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=/usr/bin/gcc-6
 ```
 cd ~/catkin_ws/src
 git clone https://github.com/kunaltyagi/darknet_ros.git
+cd darknet_ros/
 git checkout opencv4
 git submodule update --init --recursive
 ```
