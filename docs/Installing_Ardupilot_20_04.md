@@ -22,6 +22,10 @@ reload profile
 ```
 . ~/.profile
 ```
+## If the next step "git submodule update" fails
+```
+git config --global url.https://.insteadOf git://
+```
 
 ## Checkout Latest Copter Build
 ```
