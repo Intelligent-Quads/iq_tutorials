@@ -67,8 +67,6 @@ echo 'export GAZEBO_MODEL_PATH=~/ardupilot_gazebo/models' >> ~/.bashrc
 
 ## Run Simulator
 
-**NOTE the iris_arducopter_runway is not currently working in gazebo11. The iq_sim worlds DO work**
-
 In one Terminal (Terminal 1), run Gazebo:
 ```
 gazebo --verbose ~/ardupilot_gazebo/worlds/iris_arducopter_runway.world
@@ -80,4 +78,12 @@ cd ~/ardupilot/ArduCopter/
 sim_vehicle.py -v ArduCopter -f gazebo-iris --console
 ```
 
+---
+**NOTE #1:  the ```iris_arducopter_runway``` is not currently working in gazebo11. The iq_sim worlds DO work**
+
+**NOTE #2: if you are using Ubuntu 18.04 on VMWare suite, you may encounter errors while trying to run Gazebo 9, such as: ```VMware: vmw_ioctl_command error Invalid argument```. To fix these, run the following command in a terminal window:**
+```
+echo "export SVGA_VGPU10=0" >> ~/.bashrc
+```
+---
 
