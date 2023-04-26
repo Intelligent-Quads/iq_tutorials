@@ -32,7 +32,7 @@ sudo apt install gazebo9 libgazebo9-dev
 ```
 ### Ubuntu [***20.04***]
 ```
-sudo apt-get install gazebo11 libgazebo11-dev
+sudo apt-get install gazebo libgazebo-dev
 ```
 
 for more detailed instructions for installing gazebo checkout http://gazebosim.org/tutorials?tut=install_ubuntu
