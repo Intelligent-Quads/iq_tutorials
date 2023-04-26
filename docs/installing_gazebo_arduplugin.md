@@ -73,7 +73,11 @@ In one Terminal (Terminal 1), run Gazebo:
 ```
 gazebo --verbose ~/ardupilot_gazebo/worlds/iris_arducopter_runway.world
 ```
-
+If Gazebo won't start, run these codes. Then run Gazebo again:
+```
+export SVGA_VGPU10=0
+echo "export SVGA_VGPU10=0" >> ~/.bashrc
+```
 In another Terminal (Terminal 2), run SITL:
 ```
 cd ~/ardupilot/ArduCopter/
